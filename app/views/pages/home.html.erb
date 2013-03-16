@@ -1,8 +1,17 @@
+<% if user_signed_in? %>
+	<h1> You're logged in! </h1>
+	<p>
+		Welcome to my Ruby on Rails application - we're still building so standby and there will be more here in a bit!
+	</p>
+<% else %>
+
 <div class="hero-unit">
 	<h1>Welcome to One Month Rails</h1>
 		<p>
 			You have found the homepage for my first Ruby on Rails application that I built from 
 			<%= link_to "One Month Rails!", "http://www.onemonthrails.com"%> <p>
-			<%= link_to "Check it out so you can learn too!", "http://www.onemonthrails.com/", class: "btn btn-large btn-primary"%>
+			<%= link_to "Sign-Up Now", new_user_registration_path, class: "btn btn-large btn-primary"%>
 		</p>
 </div>
+
+<% end %>
