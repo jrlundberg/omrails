@@ -1,0 +1,31 @@
+/*You could change the font of the application using the below 
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+*/
+
+$btnPrimaryBackground: red;
+$navbarBackgroundHighlight: black;
+$navbarBackground: black;
+$navbarLinkColor: white;
+$navbarLinkColorHover: gray; 
+
+@import 'bootstrap';
+
+.navbar-inner {
+	@include box-shadow(none !important)
+}
+
+body { 
+	padding-top: 40px; 
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
