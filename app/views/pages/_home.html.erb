@@ -1,9 +1,4 @@
-<% if user_signed_in? %>
-	<h1> You're logged in! </h1>
-	<p>
-		Welcome to my Ruby on Rails application - we're still building so standby and there will be more here in a bit!
-	</p>
-<% else %>
+<% unless user_signed_in? %>
 
 <div class="hero-unit">
 	<h1>Welcome to One Month Rails</h1>
