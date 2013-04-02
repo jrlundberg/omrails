@@ -65,7 +65,17 @@ Omrails::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-    # For Devise gem
+  # For Devise gem
   config.action_mailer.default_url_options = { :host => 'jrlundberg.com' }
+
+  # For Amazon S3 with Paperclip
+    config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
   
 end
