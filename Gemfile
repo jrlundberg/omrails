@@ -7,6 +7,7 @@ gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem "cocaine", "0.3.2" 
 gem "aws-sdk"
+gem 'faker'
 
 group:development, :test do 
 	gem 'sqlite3'
