@@ -8,6 +8,8 @@ gem "paperclip", "~> 3.0"
 gem "cocaine", "0.3.2" 
 gem "aws-sdk"
 gem 'faker'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 group:development, :test do 
 	gem 'sqlite3'
